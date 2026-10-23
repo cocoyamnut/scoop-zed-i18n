@@ -1,16 +1,16 @@
 {
-  "version": "1.25.1-i18n.1",
+  "version": "1.25.2-i18n.1",
   "description": "Localized build of the Zed editor (pt-BR)",
-  "homepage": "https://github.com/LI-NA/zed-i18n",
+  "homepage": "https://github.com/cocoyamnut/zed-i18n",
   "license": "GPL-3.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/LI-NA/zed-i18n/releases/download/v1.25.1-i18n.1/Zed-i18n-windows-x86_64.zip",
-      "hash": "3a95825febeb5602302ed38242c346f3c10b7a2fb50f28781baf814f6cc4222c"
+      "url": "https://github.com/cocoyamnut/zed-i18n/releases/download/v1.25.2-i18n.1/Zed-i18n-windows-x86_64.zip",
+      "hash": "09990fc00d669819b4d6cf1b188b412bf361714a046072d3ed7c059ae424ba99"
     },
     "arm64": {
-      "url": "https://github.com/LI-NA/zed-i18n/releases/download/v1.25.1-i18n.1/Zed-i18n-windows-aarch64.zip",
-      "hash": "aebc750041f4865b94cae6b35ff567e36a2db1c58bbca3b8da8a79be7a8c0566"
+      "url": "https://github.com/cocoyamnut/zed-i18n/releases/download/v1.25.2-i18n.1/Zed-i18n-windows-aarch64.zip",
+      "hash": "fdd74c0c3783c0654ed5e170dca9ce38ccb68f290f14dd14a3483664b5551c21"
     }
   },
   "bin": [
@@ -37,20 +37,20 @@
     "[System.IO.File]::WriteAllText($cfg, ($j | ConvertTo-Json -Depth 10), (New-Object System.Text.UTF8Encoding $false))"
   ],
   "checkver": {
-    "url": "https://github.com/LI-NA/zed-i18n/releases/latest",
+    "url": "https://github.com/cocoyamnut/zed-i18n/releases/latest",
     "regex": "/releases/tag/v([\\d.]+-i18n\\.\\d+)"
   },
   "autoupdate": {
     "architecture": {
       "64bit": {
-        "url": "https://github.com/LI-NA/zed-i18n/releases/download/v$version/Zed-i18n-windows-x86_64.zip"
+        "url": "https://github.com/cocoyamnut/zed-i18n/releases/download/v$version/Zed-i18n-windows-x86_64.zip"
       },
       "arm64": {
-        "url": "https://github.com/LI-NA/zed-i18n/releases/download/v$version/Zed-i18n-windows-aarch64.zip"
+        "url": "https://github.com/cocoyamnut/zed-i18n/releases/download/v$version/Zed-i18n-windows-aarch64.zip"
       }
     },
     "hash": {
-      "url": "https://github.com/LI-NA/zed-i18n/releases/download/v$version/SHA256SUMS.txt"
+      "url": "https://github.com/cocoyamnut/zed-i18n/releases/download/v$version/SHA256SUMS.txt"
     }
   },
   "notes": [
